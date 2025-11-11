@@ -65,8 +65,7 @@ DROP DATABASE nome_database;
 
 
 
-///esercizi query
-
+// esercizi query
 
 // mostrare tutti i prodotti disponibili
 
