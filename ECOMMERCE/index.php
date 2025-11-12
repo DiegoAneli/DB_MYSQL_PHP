@@ -24,7 +24,7 @@
 
 
         <table>
-
+            
             <thead>
                 <tr>
                     <th>
@@ -39,7 +39,6 @@
                     <th>
                         Actions : 
                     </th>
-                    
                 </tr>
             </thead>
 

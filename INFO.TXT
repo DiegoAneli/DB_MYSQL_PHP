@@ -66,6 +66,12 @@ DROP DATABASE nome_database;
 
 
 
+//------------------------------------RINOMINARE TABELLA------------------------------
+
+
+RENAME TABLE nome_tabella TO nuovo_nome_tabella;
+
+ALTER TABLE nome_vecchio TO nuovo_nome;
 
 
 
