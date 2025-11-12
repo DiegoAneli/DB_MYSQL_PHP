@@ -7,16 +7,13 @@
 ?>
 
 
-
-
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v<?= time() ?>">
 </head>
 <body>
 
@@ -36,9 +33,13 @@
                      <th>
                         Telefono : 
                     </th>
-                     <th>
+                    <th>
                         Email : 
                     </th>
+                    <th>
+                        Actions : 
+                    </th>
+                    
                 </tr>
             </thead>
 
@@ -50,6 +51,7 @@
                 <?php  while($row = mysqli_fetch_assoc($result)) :     ?>
                     <tr>
                         <td>
+                        <!--HTMLSPECIALCHARS aggiunge alla pagina html parti di codice-->
                             <?= htmlspecialchars($row['nome']) ?> <!--mostra nome-->
                         </td>
                         <td>
@@ -58,12 +60,12 @@
                         <td>
                             <?= htmlspecialchars($row['email']) ?> <!--mostra email-->
                         </td>
-                        
-                        <td class="action">
 
-                            <a href="modifica_contatto.php">Edit</a>
-                            <a href="elimina_contatto.php">Delete</a>
-                            <a href="ordini.php">Ordini</a>
+                        <td class="actions">
+
+                            <a href="modifica_contatto.php">🖊️</a>
+                            <a href="elimina_contatto.php">🗑️</a>
+                            <a href="ordini.php">📦</a>
 
                         </td>                          
                             
