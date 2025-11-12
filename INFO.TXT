@@ -140,25 +140,41 @@ DROP DATABASE nome_database;
 
 
     CREARE DB APPARTAMENTI, 
+
     CREARE TABELLA, 
-    E INSERIRE : ID , INTERNO, PIANO, METRI_QUADRI, PROPRIETARIO 
 
-        //MOSTRARE TUTTI GLI APPARTAMENTI
+        E INSERIRE : ID , INTERNO, PIANO, METRI_QUADRI, PROPRIETARIO 
 
-        //MOSTRARE GLI APPARTEMENTI AL 2° PIANO
+            //INSERIMENTO DI DATI , POPOLARLO
 
-        //MOSTRARE APPARTAMENTI CON PIU DI 80MQ2
+            //MOSTRARE TUTTI GLI APPARTAMENTI 
+                SELECT * FROM appartamenti;
 
-        //MOSTRARE SOLO INTERNO E PROPRIETARIO
+            //MOSTRARE GLI APPARTEMENTI AL 2° PIANO
+                SELECT * FROM appartamenti WHERE piano = 2;
 
-        //ORDINARE GLI APPARTAMENTI PER METRI_QUADRI DAL PIU GRANDE AL PIU PICCOLO
+            //MOSTRARE APPARTAMENTI CON PIU DI 80MQ2
+                SELECT * FROM `appartamenti` WHERE metri_quadri > 80;
 
-        //CALCOLA LA MEDIA DEI METRI_QUADRI
-        
-        //INSERIMENTO DI DATI , POPOLARLO
+            //MOSTRARE SOLO INTERNO E PROPRIETARIO
+                SELECT interno, proprietario FROM appartamenti;
 
-        //AGGIORNAMENTO DI UN DATO (METRI_QUADRI)
+            //ORDINARE GLI APPARTAMENTI PER METRI_QUADRI DAL PIU GRANDE AL PIU PICCOLO (DESC)
+                SELECT * FROM appartamenti ORDER BY metri_quadri DESC;
 
-        //CANCELLARE UN DATO ( UN INTERNO )
+            //CALCOLA LA MEDIA DEI METRI_QUADRI
+                SELECT AVG(metri_quadri) AS media_mq FROM appartamenti;
+            
+          
 
-        //CANCELLARE APPARTAMENTI SOTTO GLI 80MQ2
+            //AGGIORNAMENTO : AGGIUNGERE 5 MQ2 A TUTTI GLI APPARTAMENTI DEL PIANO 1
+                UPDATE appartamenti
+                SET metri_quadri = metri_quadri + 5
+                WHERE piano = 1;
+
+
+
+
+            //CANCELLARE UN DATO ( UN INTERNO )
+
+            //CANCELLARE APPARTAMENTI SOTTO GLI 80MQ2
