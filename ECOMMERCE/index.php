@@ -50,10 +50,23 @@
                 <?php  while($row = mysqli_fetch_assoc($result)) :     ?>
                     <tr>
                         <td>
-                            <?php htmlspecialchars($row['nome']) ?> <!--mostra nome-->
-                            <?php htmlspecialchars($row['telefono']) ?> <!--mostra telefono-->
-                            <?php htmlspecialchars($row['email']) ?> <!--mostra email-->
+                            <?= htmlspecialchars($row['nome']) ?> <!--mostra nome-->
                         </td>
+                        <td>
+                            <?= htmlspecialchars($row['telefono']) ?> <!--mostra telefono-->
+                        </td>
+                        <td>
+                            <?= htmlspecialchars($row['email']) ?> <!--mostra email-->
+                        </td>
+                        
+                        <td class="action">
+
+                            <a href="modifica_contatto.php">Edit</a>
+                            <a href="elimina_contatto.php">Delete</a>
+                            <a href="ordini.php">Ordini</a>
+
+                        </td>                          
+                            
                     </tr>
 
                 <?php endwhile; ?>    
