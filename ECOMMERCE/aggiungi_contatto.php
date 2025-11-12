@@ -53,11 +53,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 
         </form>
-
+        
             <a href="index.php" class="button">Torna alla lista</a>
-
-
-
+            
     </div>
 
 
