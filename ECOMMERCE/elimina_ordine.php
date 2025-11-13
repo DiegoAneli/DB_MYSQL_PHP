@@ -31,8 +31,6 @@ $delete = "DELETE FROM ordini WHERE id=$id";
 //lancio la query
 mysqli_query($conn, $delete);
 
-
-
 header("Location: ordini.php?id=$contatto_id");
 
 

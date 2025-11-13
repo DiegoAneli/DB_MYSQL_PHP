@@ -56,23 +56,14 @@
                     onclick="return confirm('Sei sicuro di voler eliminare questo ordine?')">🗑️</a>
 
                 </td>
-
-
-
-
             </tr>
-
-            
-
-
 
              <?php  endwhile;   ?>
 
         </table>
 
         <a href="index.php" class="button">Torna alla lista</a>
-        
-
+    
     </div>
 
 
