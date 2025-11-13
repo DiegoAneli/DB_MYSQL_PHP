@@ -42,9 +42,6 @@
                 </tr>
             </thead>
 
-
-
-
             <tbody>
                 <!--Ciclo WHILE FINTANTO CHE HO RESULT, MOSTRAMELI IN ROW DEDICATE--->
                 <?php  while($row = mysqli_fetch_assoc($result)) :     ?>
