@@ -1,7 +1,17 @@
+<?php
 
-REQUIRE 'DB'
+    //importante, importare la connessione db
+    require 'db.php';
 
-$ID = GET['ID']
+    //recupero l ID della risorsa
+    $id = $_GET['id'];
 
-QUERY SU DELETE FROM CONTATTI WHERE ID= $ID
+    //query per eliminare
+    mysqli_query($conn, "DELETE FROM contatti WHERE id=$id");
 
+    //reindirizza alla home dopo aver cancellato
+    header("Location: index.php");
+
+
+
+?>
