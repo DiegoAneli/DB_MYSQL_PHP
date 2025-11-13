@@ -12,6 +12,9 @@
     //creo la connessione
     $conn = mysqli_connect($host, $user, $password, $database);
 
+    //in caso di problemi usare con porta specificata :
+    //$conn = mysqli_connect($host, $user, $password, $database, 3306); //o la porta configurata nel vs pc
+
     //verifico che la connessione funzioni 
 
     if(!$conn){
