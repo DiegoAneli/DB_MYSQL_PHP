@@ -5,7 +5,7 @@
 
     $id = $_GET['id']; // recupero l id dell a risorsa da modificare
 
-
+    $row = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM contatti WHERE id=$id"));
 
 
 
@@ -15,12 +15,16 @@
 
 
         //RECUPERO DEGLI INPUT DEL FORM DI MODIFICA
-        $nome = $POST['nome'];
-        $telefono = $POST['telefono'];
-        $email = $POST['email'];
-
+        $nome = $_POST['nome'];
+        $telefono = $_POST['telefono'];
+        $email = $_POST['email'];
+    
         //query
-        mysqli_query($conn, "")
+        mysqli_query($conn, "UPDATE contatti SET nome='$nome', telefono='$telefono', email='$email' WHERE id=$id");
+
+
+        //reindirizzo una volta modificato
+        header("Location: index.php");
 
 
 
@@ -57,11 +61,11 @@
 
             <form action="" method="POST">
 
-                Nome : <input name="nome" type="text" required>
+                Nome : <input name="nome" type="text"  value="<?= $row['nome']    ?>"     required>
 
-                Telefono : <input name="telefono" type="text" required>
+                Telefono : <input name="telefono" type="text" value="<?= $row['telefono']    ?>" required>
 
-                Email : <input name="email" type="text" required>
+                Email : <input name="email" type="text" value="<?= $row['email']    ?>" required>
 
 
                 <button type="submit">Aggiorna</button>
