@@ -70,6 +70,7 @@
 
         </table>
 
+        <a href="index.php" class="button">Torna alla lista</a>
         
 
     </div>
