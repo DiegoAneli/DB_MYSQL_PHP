@@ -23,4 +23,6 @@
         die("Connessione fallita: " . mysqli_connect());
     }
 
+
+    
 ?>
