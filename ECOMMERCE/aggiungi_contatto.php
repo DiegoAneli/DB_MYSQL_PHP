@@ -13,7 +13,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     //QUERY DI INSERIMENTO CONTATTO PASSANDO I VALORI DEL FORM
     $sql = "INSERT INTO contatti( nome, telefono, email ) VALUES('$nome','$telefono','$email')";
-
+    
 
     //ESEGUO LA QUERY
     mysqli_query($conn, $sql);
