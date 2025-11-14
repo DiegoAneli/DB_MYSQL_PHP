@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +34,7 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <div class="navbar-nav ms-auto">
-
+                <!--Link del menu-->
                 <a href="clienti.php" class="nav-link">Clienti</a>
                 <a href="destinazioni.php" class="nav-link">Destinazioni</a>
                 <a href="prenotazioni.php" class="nav-link">Prenotazioni</a>
@@ -43,22 +43,11 @@
 
             </div>
         </div>
-        <!--Link del menu-->
-        
-
-
-
     </div>
-
-
-
 </nav>
 
+<main class="container mt-4">
 
 
 
 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
-</html>
