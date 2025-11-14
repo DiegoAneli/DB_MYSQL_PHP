@@ -53,12 +53,12 @@ CREATE TABLE prenotazioni (
     assicurazione BOOLEAN NOT NULL,
 
     CONSTRAINT fk_cliente FOREIGN KEY (id_cliente) -> Questo vincolo impedisce l inserimento di una prenotazione con una destinazione che non esiste
-    REFERENCES clienti(id),                        -> referenza con l ID della tabella clienti 
+    REFERENCES clienti(id)                        -> referenza con l ID della tabella clienti 
     ON DELETE CASCADE,                             -> Cancella automaticamente le prenotzioni se la destinazione viene eliminata
 
 
     CONSTRAINT fk_destinazione FOREIGN KEY (id_destinazione) 
-    REFERENCES destinazioni(id),
+    REFERENCES destinazioni(id)
     ON DELETE CASCADE
 );
 
